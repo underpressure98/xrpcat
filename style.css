@@ -1,0 +1,181 @@
+html, body {
+    height: 100%; /* Make sure the html and body are full height */
+    margin: 0;
+    background-image: url('backgroundd.jpg'); 
+    cursor: url('Cursor}.png'), auto;
+    overflow-x: hidden;
+    z-index:-3;
+}
+
+.main {
+    width: 100%; /* Ensure it takes up the full width */
+    text-align: center; /* Center the content horizontally */
+    padding-top: 90px;
+    z-index: 99;
+}
+
+.main img {
+    width: 30%;
+    image-rendering:optimizeQuality;
+    z-index: 99;
+}
+
+.main3 img {
+    width: 250px;
+    z-index: 99;
+}
+
+.sound {
+    scale: 50%;
+    position: fixed; top: -4px; left: -4px; cursor: url('Cursor4.png'), pointer;
+}
+
+.icon11 {
+    width: 4%;
+    position: fixed; 
+    top: 10px;
+    right: 30px;
+}
+
+@media (max-width: 600px) {
+    .main img {
+    width: 80%;
+    image-rendering:optimizeQuality;
+    z-index: 99;
+    }
+    .main {
+        width: 100%; /* Ensure it takes up the full width */
+        text-align: center; /* Center the content horizontally */
+        padding-top: 60px;
+        z-index: 99;
+    }
+    .main3 img {
+        width: 100px;
+        z-index: 99;
+        border: 6px ridge #ffc900;
+        margin-inline: 8px;
+    }
+    .sound {
+        scale: 25%;
+        position: fixed; top: -35px; left: -35px; cursor: url('Cursor4.png'), pointer;
+    }
+    .icon11 {
+        width: 6%;
+        position: fixed; 
+        top: 0;
+        right: 1px;
+    }
+}
+
+.main2 {
+    width: 100%; /* Ensure it takes up the full width */
+    text-align: center; /* Center the content horizontally */
+    padding-top: 0px;
+    padding-bottom:20px;
+    z-index: 99;
+    z-index: 99;
+}
+
+.main2 img {
+    width: 15%;
+    z-index: 99;
+}
+
+.top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Ensure full width */
+    padding-top: 20px; /* Add padding to ensure content is centered, adjust as needed */
+    z-index: 99;
+}
+
+.top a {
+    display: inline-flex; /* Make anchor inline-flex to limit its size to its content */
+    justify-content: center;
+    align-items: center;
+    margin: 0 -30px; /* Optional: Adjust space between icons */
+    z-index: 99;
+}
+
+.top a img {
+    width: auto;
+    height: auto;
+    max-width: 50%;
+    z-index: 99;
+}
+
+.marquee {
+    position: absolute; /* Use absolute positioning */
+    bottom: 0; /* Align to the bottom of the page */
+    width: 100%;
+    overflow: hidden;
+    z-index: 99;
+}
+
+.marquee-inner {
+    display: flex;
+    animation: marquee 40s linear infinite;
+    z-index: 99;
+}
+
+.marquee-inner img {
+    height: 100px; /* Adjust based on your needs */
+    /* Ensure the images are displayed inline */
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+      }
+      to {
+        transform: translateX(calc(-100% - 2rem));
+      }
+}
+
+body, html {
+    cursor: url('Cursor3.png'), auto;
+}
+
+a, button {
+    cursor: url('Cursor4.png'), pointer;
+}
+
+.pen {
+    border: 13px ridge #ffc900;
+    margin-inline: 8px;
+}
+
+.footer {
+    color: white; /* Set text color to white */
+    font-family: 'Times New Roman', Times, serif; /* Use Times New Roman font */
+    text-shadow: 0px 2px 0px #008CFF; /* Add a light blue shadow */
+    text-align: center; /* Center the text horizontally */
+    width: 100%; /* Ensure it spans the full width of its container */
+    font-size: 25px;
+    font-style: bold;
+    z-index: 99;
+}
+
+
+.background-logo {
+    position: absolute; /* or absolute, depending on your layout */
+    bottom: 0;
+    scale: 10%;
+    opacity: 0.3;
+    z-index: 1; /* Ensures it's behind other content; adjust as necessary */
+}
+
+
+.main3 {
+    width: 100%; /* Ensure it takes up the full width */
+    text-align: center; /* Center the content horizontally */
+    padding-top: 20px;
+    padding-bottom:20px;
+    z-index: 99;
+    z-index: 99;
+}
+
+.bigspace {
+    padding-top: 100px;
+}
